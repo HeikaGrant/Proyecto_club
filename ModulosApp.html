@@ -1,0 +1,488 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+.navA{
+color:#DADADA
+}
+.a {
+color:#5A1F75;
+}
+body { overflow-x: hidden;}
+.center{
+margin-left: 150px; 
+margin-right: 150px; 
+}
+
+.footer {
+    background: #EBEBEB;
+  }
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+#img-upload{
+    width: 100%;
+}
+  .footer {
+    background: #EBEBEB;
+  }
+  .footerline{
+  background: #5A1F75;
+  
+  }
+</style>
+  <title>Kiosko</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+ <!-- <script src="validator.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min.js"></script>
+  
+
+  <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css"/>
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+<br>
+ <div class="navbar-header" style ="margin-left: 20px; margin-bottom:15px">
+	
+		<a href="#">
+			<img src="ulacit.png" alt="ULACIT"/>
+		</a>
+	
+	</div>
+</nav>
+  <nav class="navbar navbar-inverse" style ="margin-top: 60px; background-color: #5A1F75">
+    <div class="container-fluid">
+	<br><br>
+	
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="ModulosApp.html">Inicio</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+     <ul class="nav navbar-nav">
+          <li>
+            <a href="Ranking.html" role="button" aria-haspopup="true" aria-expanded="false style="color:red" style="align=right-side">
+             <i class="fa fa-check" aria-hidden="true"></i>
+				Ranking          
+           </a>
+		  </li>
+      </ul>
+
+		 <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="CategoriasApp.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+             <i class="fa fa-server "></i>
+             Categorias
+             <span class="caret"></span>
+           </a>
+           <ul class="dropdown-menu">
+            <li><a href="Escoger.html">
+			<i class = "fa fa-calendar"></i>
+			Periodo</a></li>
+            <li role="separator" class="divider"></li>
+             <li><a href="CalificacionesApp.html">
+			<i class = "fa fa-calendar"></i>
+			General</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+
+    	  	   <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="index.html" role="button" aria-haspopup="true" aria-expanded="false style="color:red" style="align=right-side">
+             <i class="	fa fa-sign-out navA"></i>
+				Log out
+				
+             <span class="caret"></span>
+           </a>
+		  </li>
+		  
+</ul>   
+    </div>
+     </div>
+   </div>
+</nav>
+<br>
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Menú
+
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+             <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+		<a href="navbar.html">
+  <img src="Images/sellosApp-01.png" alt="...">
+		</a>
+		  <div class="caption">              
+                <p>Informacion sobre los sellos verde a los que he asistido.</p>
+            </div>
+			</div>
+			</div>
+			
+            
+			 <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+                <a href="navbar.html">
+  <img src="Images/calendarioApp-01.png" alt="...">
+		</a>
+				  <div class="caption">              
+                <p>Fechas de matricula, inicio y final de cuatrimestre y demas fechas importantes.</p>
+            </div>
+			</div>
+            </div>
+			 <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+               <a href="CalificacionesApp.html">
+  <img src="Images/calificacionesApp-01.png" alt="...">
+		</a>
+                  <div class="caption">
+                <p>Consulta tus calificaciones por carrera y periodo.</p>
+            </div>
+			</div>
+        </div>
+		</div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+           <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+		<a href="PlanesDeEstudio.html">
+  <img src="Images/planesApp-01.png" alt="...">
+		</a>
+		  <div class="caption">                
+                <p>Consulta los planes de estudio por carrera.</p>
+            </div>
+			</div>
+			</div>
+            <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+               <a href="ReporteDeMaterias.html">
+  <img src="Images/reporteApp-01.png" alt="...">
+		</a>
+			     <div class="caption"> 
+                <h3>                   
+                </h3>
+                <p>Consulte las materias por carrera</p>
+            </div>
+			</div>
+			</div>
+            <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+              <a href="navbar.html">
+  <img src="Images/mapaApp-01.png" alt="...">
+		</a>
+			    <div class="caption">               
+                <p>Mapa de la universidad, salidas de emergencia y parqueos.</p>
+            </div>
+			</div>
+			</div>
+        </div>
+</div>
+
+<!-- Trigger the modal with a button -->
+
+
+<div id="footer" class="footerline">
+ <div>-</div>
+</div>
+    <div id="footer" class="footer">
+	 <div class="container">
+
+        <div class="row footer">
+          <div class="col-sm-3">
+
+            <div class="foot-links">
+              <p><br>San José, Costa Rica<br>
+               Urbanización Tournón</p>
+             </div>
+           </div>
+          <div class="col-sm-3">
+           <div class="foot-links">
+           <p><a href="#" style="color: #701E85"><br>¿Quiénes somos?</a>
+             <a href="#" style="color: #701E85"><br>Contáctenos<br></a>
+            </p>
+            </div>
+       </div><!--/col-sm-3-->
+       <div class="col-sm-3">
+       <br>
+        <div class="foot-links">
+          <a href="https://www.facebook.com/ulacitcostarica"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+              <a href="https://twitter.com/ulacitcostarica"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+              <a href="http://www.youtube.com/user/Ulacitcr"><i id="social-em" class="fa fa-youtube-square fa-3x social"></i></a>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="foot-header"> <br> </div>
+        <div class="foot-links">
+           <a href="http://www.ulacit.ac.cr/" style="color: #701E85">ULACIT</a><br>
+         Proyecto App<br>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="foot-header">
+        </div>
+      </div>
+      <div class="col-sm-3">
+
+      </div>
+
+    </div><!--/row-->
+    <div class="row">
+      <div id="bottom-footer">
+        <div class="row">
+          <div class="col-md-8">
+
+          </div>
+          <div class="col-md-4 phone">
+            <div class="pull-left">
+
+            </div>
+            <div class="pull-right">
+
+            </div>
+          </div>
+        </div>
+      </div>
+   </div>
+ </div>
+ </div>
+
+
+ <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog" ng-controller = "gradesCrtl">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Kiosko de calificaciones</h4>
+        </div>
+        <div class="modal-body">
+
+            <div class="form-horizontal" method="post">
+                    <fieldset>
+                        <legend class="text-center header">Calificaciones a consultar</legend>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-1 text-center"><i class="fa fa-user  bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="IdGestion" name=IdGestion" type="text" placeholder="Cedula" class="form-control" ng-model ="IdGestion">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-1 text-center"><i class="fa fa-calendar-times-o  bigicon"></i></span>
+                            <div class="col-md-8">
+                                
+                                 <select  id="IdAnimal" name="IdAnimal" class="form-control" >
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+ 
+                              </select>
+
+
+
+                               
+                            </div>
+                        </div>
+                    
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-1 text-center"><i class="fa fa-calendar bigicon"></i></span>
+                            <div class="col-md-8">
+
+
+                                  <select  id="ano" name="ano" class="form-control" >
+                                  <option>2015</option>
+                                  <option>2016</option>
+                                  <option>2017</option>
+                                  
+                               
+                              </select>
+
+
+                                
+                            </div>
+                        </div>
+                        
+                       
+                          <div class="form-group">
+
+
+                             
+
+
+
+
+                            <span class="col-md-1 col-md-offset-1 text-center"><i class="fa fa-briefcase  bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="IdCliente" name="IdCliente" type="text" placeholder="Plan" class="form-control">
+                            </div>
+                        </div>
+
+                         
+                     
+                      <div>
+                 <span class="col-md-12 text-center"> <strong> Favor verificar que la informacion este correcta </strong>  </span>
+
+            </div>
+                        
+                      
+                       
+                    </fieldset>
+                </div>
+
+
+
+        </div>
+        <div class="modal-footer">
+        <div class="col-md-12 text-center">
+
+         <div class="form-group">
+                            <div class="col-md-12 text-center">
+                                <button  type="submit" class="btn btn-primary btn-lg" ng-click = "getGrades()" >Consultar</button>
+
+                            </div>
+                        </div>
+
+        
+        <div >
+            <div class="{{alert}} alert-dismissable collapse" role="alert" id = "alerta">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>{{mensaje}}</strong> {{mensaje2}}
+        </div>
+
+        </div>
+        
+           
+         
+
+        </div>
+      
+         
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+<!--
+<script>
+	$(document).ready( function() {
+    	$(document).on('change', '.btn-file :file', function() {
+		var input = $(this),
+			label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+		input.trigger('fileselect', [label]);
+		});
+
+		$('.btn-file :file').on('fileselect', function(event, label) {
+		    
+		    var input = $(this).parents('.input-group').find(':text'),
+		        log = label;
+		    
+		    if( input.length ) {
+		        input.val(log);
+		    } else {
+		        if( log ) alert(log);
+		    }
+	    
+		});
+		function readURL(input) {
+		    if (input.files && input.files[0]) {
+		        var reader = new FileReader();
+		        
+		        reader.onload = function (e) {
+		            $('#img-upload').attr('src', e.target.result);
+					//para cambiar la imagen del Modal:
+					$('#imgNueva').attr('src', e.target.result);
+		        }
+		        
+		        reader.readAsDataURL(input.files[0]);
+		    }
+		}
+
+		$("#imgInp").change(function(){
+		    readURL(this);
+		}); 	
+		 
+	});
+	
+//Insiderz. (s.f.). Upload Image w Preview & Filename. Obtenido de Bootsnipp: http://bootsnipp.com/snippets/qglp0
+
+
+</script>
+
+<script type="text/javascript">
+  $('#myForm').validator()
+
+</script>
+<script>
+  $(function () {
+		Application.init();
+	});
+</script> -->
+
+
+</body>
+
+
+
+          
+
+</html>

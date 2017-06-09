@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+  body { overflow-x: hidden;}
+  .center{
+    margin-left: 150px; 
+    margin-right: 150px; 
+
+  }
+  .footer {
+    background: #EBEBEB;
+  }
+  .footerline{
+  background: #5A1F75;
+  
+  }
+  .row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+  </style>
+  <title>Kiosko</title>
+ 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css"/>
+  <link rel="stylesheet" href="dataTables.bootstrap.min.css"/>
+  <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css"/>
+  <script src="jquery-1.11.3.min.js"></script>
+  <script src="global.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <script src="jquery.dataTables.min.js"></script>
+  <script src= "dataTables.bootstrap.min.js"></script>
+
+  <script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+    Application.init();
+  });
+  </script>
+
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+<br>
+ <div class="navbar-header" style ="margin-left: 20px; margin-bottom:15px">
+	
+		<a href="#">
+			<img src="ulacit.png" alt="ULACIT"/>
+		</a>
+</div>
+</nav>
+  <nav class="navbar navbar-inverse" style ="margin-top: 60px; background-color: #5A1F75">
+    <div class="container-fluid">
+	<br><br>
+
+   </div>
+</nav>
+<div id="base" class = "container">
+  <div id = "contenidoDinamico"> 
+	<center>
+    <div class="page-header">
+      <h2>Iniciar Sesión</h2>
+    </div>
+	<div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <div class="thumbnail">
+        <img src="Images/inicioApp-01.png" alt="...">
+        <div class="caption">
+        <form>
+  <div>
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd" style="50px">
+  </div>
+<p><a href="ModulosApp.html" class="btn btn-default" role="button">Sign In</a> </p>
+</form>
+          </div>
+        </div>
+      </div>
+	  </div>
+	</center>
+    </div>
+	<hr>
+		    
+</div>
+<div id="footer" class="footerline">
+ <div>-</div>
+</div>
+    <div id="footer" class="footer">
+      <div class="container">
+
+        <div class="row footer">
+          <div class="col-sm-3">
+
+            <div class="foot-links">
+              <p><br>San José, Costa Rica<br>
+               Urbanización Tournón</p>
+             </div>
+           </div>
+          <div class="col-sm-3">
+           <div class="foot-links">
+             <p><a href="#" style="color: #701E85"><br>¿Quiénes somos?</a>
+             <a href="#" style="color: #701E85"><br>Contáctenos<br></a>
+            </p>
+            </div>
+       </div>
+       <div class="col-sm-3">
+        <br>
+        <div class="foot-links">
+          <a href="https://www.facebook.com/ulacitcostarica"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+              <a href="https://twitter.com/ulacitcostarica"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+              <a href="http://www.youtube.com/user/Ulacitcr"><i id="social-em" class="fa fa-youtube-square fa-3x social"></i></a>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="foot-header"> <br> </div>
+        <div class="foot-links">
+           <a href="http://www.ulacit.ac.cr/" style="color: #701E85">ULACIT</a><br>
+        Proyecto App<br>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="foot-header">
+        </div>
+      </div>
+      <div class="col-sm-3">
+
+      </div>
+
+    </div><!--/row-->
+    <div class="row">
+      <div id="bottom-footer">
+        <div class="row">
+          <div class="col-md-8">
+
+          </div>
+          <div class="col-md-4 phone">
+            <div class="pull-left">
+
+            </div>
+            <div class="pull-right">
+
+            </div>
+          </div>
+        </div>
+      </div>
+   </div>
+ </div>
+</div>
+
+   
+
+
+  
+</body>

@@ -1,0 +1,21 @@
+2016-09-24 13:53:03,933 [Worker-23] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: converter:converter:0.0.1-SNAPSHOT @ /home/cmoramom/workspace/converter/pom.xml.
+2016-09-24 13:53:09,338 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-24 13:53:09,355 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cmoramom/workspace/converter/src/main/resources
+2016-09-24 13:53:09,362 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-24 13:53:09,363 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cmoramom/workspace/converter/src/test/resources
+2016-09-24 13:53:10,927 [Worker-20] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: converter:converter:0.0.1-SNAPSHOT @ /home/cmoramom/workspace/converter/pom.xml.
+2016-09-24 13:53:10,991 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-24 13:53:10,993 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cmoramom/workspace/converter/src/main/resources
+2016-09-24 13:53:10,997 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-24 13:53:10,998 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cmoramom/workspace/converter/src/test/resources
+2016-09-24 13:53:12,562 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-24 13:53:12,569 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cmoramom/workspace/converter/src/main/resources
+2016-09-24 13:53:12,573 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-24 13:53:12,601 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cmoramom/workspace/converter/src/test/resources
+2016-09-24 13:53:32,757 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @1165932ms
+2016-09-24 13:53:33,303 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2016-09-24 13:53:33,506 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@5783adfb{/help,null,AVAILABLE}
+2016-09-24 13:53:33,586 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@746866c1{HTTP/1.1,[http/1.1]}{127.0.0.1:11032}
+2016-09-24 13:53:33,587 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @1166762ms
+2016-09-24 16:07:13,475 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@746866c1{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2016-09-24 16:07:14,041 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@5783adfb{/help,null,UNAVAILABLE}

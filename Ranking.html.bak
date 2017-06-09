@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+  body { overflow-x: hidden;}
+  .center{
+    margin-left: 150px; 
+    margin-right: 150px; 
+  }
+  .footer {
+    background: #EBEBEB;
+  }
+  .container {
+  margin-bottom: 20px;
+  padding-bottom: 50px;
+}
+  .footer {
+    background: #EBEBEB;
+  }
+  .footerline{
+  background: #5A1F75;
+  
+  }
+  .navA{color: #DADADA}
+  .log{
+  margin-left: 1000px;
+    margin-top: 10px;
+  }
+
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  </style>
+  <title>Kiosko</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <script src="global.js"></script>
+  <script src="jquery.dataTables.min.js"></script>
+  <script src="dataTables.bootstrap.min.js"></script>
+  <script>
+  $(function () {
+   $('[data-toggle="tooltip"]').tooltip()
+ })
+  </script>
+  <!-- it works the same with all jquery version from 1.x to 2.x -->
+
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+<br>
+ <div class="navbar-header" style="margin-left: 20px; margin-bottom:15px">
+	
+		<a href="#">
+			<img src="ulacit.png" alt="ULACIT">
+		</a>
+	
+	</div>
+</nav>
+  <nav class="navbar navbar-inverse" style="margin-top: 60px; background-color: #5A1F75" navbar-fixed-top>
+    <div class="container-fluid">
+	<br><br>
+	
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" type="button" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="ModulosApp.html">Inicio</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	   <ul class="nav navbar-nav">
+          <li>
+            <a href="CalificacionesApp.html" role="button" aria-haspopup="true" aria-expanded="false style=" color:red">
+             <i class="fa fa-graduation-cap navA"></i>
+				Informe de Calificaciones
+             <span class="caret"></span>
+           </a>
+		  </li>
+		  
+</ul>          
+<ul class="nav navbar-nav">
+  <li>
+              <a href="ModulosApp.html" role="button" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-folder-open"></i>
+              Ver Módulos
+              <span class="caret"></span>
+            </a>
+      </li></ul>
+      <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="CategoriasApp.html" role="button" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-server"></i>
+              Categorias
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">
+        <i class="fa fa-calendar"></i>
+        Periodo</a></li>
+              <li class="divider" role="separator"></li>
+              <li><a href="#">
+        <i class="fa fa-calendar"></i>
+        General</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        
+
+        <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-users"></i>
+              Acerca de
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">¿Quiénes somos?</a></li>
+              <li class="divider" role="separator"></li>
+              <li><a href="#">Contáctenos</a></li>
+            </ul>
+          </li>
+        </ul>
+      <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="index.html" role="button" aria-haspopup="true" aria-expanded="false style=" color:red" style="align=right-side">
+              <i class="	fa fa-sign-out navA"></i>
+          Log out
+          
+              <span class="caret"></span>
+            </a>
+        </li>
+</ul>      
+    </div>
+     </div>
+   </div>
+</nav>
+<div class="container">
+<div class="page-header">
+  <h1>RANKING</h1>
+</div>
+<div class="panel panel-default">
+	  <!-- Default panel contents -->
+	  <div class="panel-heading">
+      <table style="width: 100%">
+        <tr>
+          <td><h1>FELICIDADES</h1> </td>
+          <td rowspan="2"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Award_ribbon_blue_1st.png" alt="¡¡Primer Lugar!!" style="width:150px;"></td>
+        </tr>
+        <tr>
+          <td><h1 style="align left">QUESADA MORERA MARIANA</h1></div></td>
+        </tr>
+      </table>
+       
+      
+		<div class="panel-body">
+      <table style="width: 20%">
+        <tr>
+          <td><p><b>Plan de estudios:</b></p></td>
+          <td>
+            <div class="dropdown">
+              <button class="dropbtn">Planes</button>
+              <div class="dropdown-content">
+                <a href="#">Plan 1</a>
+                <a href="#">Plan 2</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr><td><b><h6>Cédula:</h6></b></td>  <td> <h6>116230268</h6></td></tr>
+      </table>
+
+			<table style="width:100%">
+        <tr><td><h2><center>Promedio General</center></h2></td> <td><h2><center>Materias Aprobadas</center></h2></td></tr>
+        <tr><td><h1><center>98.8</center></h1></td> <td><h1><center>33</center></h1></td></tr>
+			</table>		
+
+      <div id="promedios generales">
+      <h1>Top 10:</h1>
+      <table style="width: 100%">
+        <tr>
+          <td>
+            <ol>
+              <li>Estudiante </li> <p>Nota</p>
+              <li>Estudiante </li> <p>Nota</p>
+              <li>Estudiante </li> <p>Nota</p>
+              <li>Estudiante </li> <p>Nota</p>
+              <li>Estudiante </li> <p>Nota</p>
+            </ol>
+          </td>
+          <td><img src="http://www.nirdeshak.com/wp-content/uploads/sites/21/2016/03/Top-5.png" alt="Top 5"></td>
+         
+          
+        </tr>
+      </table>
+        </ol>
+      </div>
+		</div>
+    
+
+</div>
+<div class="footerline" id="footer">
+ <div>-</div>
+</div>
+    <div class="footer" id="footer">
+	 <div class="container">
+
+        <div class="row footer">
+          <div class="col-sm-3">
+
+            <div class="foot-links">
+              <p><br>San José, Costa Rica<br>
+               Urbanización Tournón</p>
+             </div>
+           </div>
+          <div class="col-sm-3">
+           <div class="foot-links">
+             <p><a href="#" style="color: #701E85"><br>¿Quiénes somos?</a>
+             <a href="#" style="color: #701E85"><br>Contáctenos<br></a>
+            </p>
+            </div>
+       </div><!--/col-sm-3-->
+       <div class="col-sm-3">
+    
+	   <br>
+        <div class="foot-links">
+          <a href="https://www.facebook.com/ulacitcostarica"><i class="fa fa-facebook-square fa-3x social" id="social-fb"></i></a>
+              <a href="https://twitter.com/ulacitcostarica"><i class="fa fa-twitter-square fa-3x social" id="social-tw"></i></a>
+              <a href="http://www.youtube.com/user/Ulacitcr"><i class="fa fa-youtube-square fa-3x social" id="social-em"></i></a>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="foot-header"> <br> </div>
+        <div class="foot-links">
+           <a href="http://www.ulacit.ac.cr/" style="color: #701E85">ULACIT</a><br>
+         Proyecto App<br>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="foot-header">
+        </div>
+      </div>
+      <div class="col-sm-3">
+
+      </div>
+
+    </div>
+    <div class="row">
+      <div id="bottom-footer">
+        <div class="row">
+          <div class="col-md-8">
+
+          </div>
+          <div class="col-md-4 phone">
+            <div class="pull-left">
+
+            </div>
+            <div class="pull-right">
+
+            </div>
+          </div>
+        </div>
+      </div>
+   </div>
+ </div>
+ </div>
+<script>
+  $(function () {
+		Application.init();
+	});
+</script>
+
+</body></html>

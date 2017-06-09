@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+  body { overflow-x: hidden;}
+  .center{
+    margin-left: 150px; 
+    margin-right: 150px; 
+  }
+  .footer {
+    background: #EBEBEB;
+  }
+  .container {
+  margin-bottom: 20px;
+  padding-bottom: 50px;
+}
+  .footer {
+    background: #EBEBEB;
+  }
+  .footerline{
+  background: #5A1F75;
+  
+  }
+  .navA{color: #DADADA}
+  .log{
+  margin-left: 1000px;
+    margin-top: 10px;
+  }
+  </style>
+  <title>Kiosko</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <script src="global.js"></script>
+  <script src="jquery.dataTables.min.js"></script>
+  <script src= "dataTables.bootstrap.min.js"></script>
+  <script>
+  $(function () {
+   $('[data-toggle="tooltip"]').tooltip()
+ })
+  </script>
+  <!-- it works the same with all jquery version from 1.x to 2.x -->
+
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+<br>
+ <div class="navbar-header" style ="margin-left: 20px; margin-bottom:15px">
+	
+		<a href="#">
+			<img src="ulacit.png" alt="ULACIT"/>
+		</a>
+	
+	</div>
+</nav>
+  <nav class="navbar navbar-inverse" style ="margin-top: 60px; background-color: #5A1F75">
+    <div class="container-fluid">
+	<br><br>
+	
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="ModulosApp.html">Inicio</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	           
+ <ul class="nav navbar-nav">
+          <li>
+            <a href="Ranking.html" role="button" aria-haspopup="true" aria-expanded="false style="color:red" style="align=right-side">
+             <i class="fa fa-check" aria-hidden="true"></i>
+				Ranking          
+           </a>
+		  </li>
+      </ul>
+	  
+		 <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="CategoriasApp.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+             <i class="fa fa-server"></i>
+             Categorias
+             <span class="caret"></span>
+           </a>
+           <ul class="dropdown-menu">
+            <li><a href="#">
+			<i class = "fa fa-calendar"></i>
+			Periodo</a></li>
+            <li role="separator" class="divider"></li>
+             <li><a href="#">
+			<i class = "fa fa-calendar"></i>
+			General</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+
+	   <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="index.html" role="button" aria-haspopup="true" aria-expanded="false style="color:red" style="align=right-side">
+             <i class="	fa fa-sign-out navA"></i>
+				Log out
+				
+             <span class="caret"></span>
+           </a>
+		  </li>
+</ul>      
+    </div>
+     </div>
+   </div>
+</nav>
+<div class="container">
+<div class="page-header">
+  <h1>Informe de Calificaciones</h1>
+</div>
+<div class="panel panel-default">
+	  <!-- Default panel contents -->
+	  <div class="panel-heading"><b><center><h4><br>INFORME DE CALIFICACIONES</br></h4></center><h5><center><b>
+		<div class="panel-body">
+			<table style="width:40%">
+				<tr><td><b>Estudiante:</b>116230268</td><td>QUESADA MORERA, MARIANA</td></tr>				
+			</table>		
+		</div>
+
+	  <!-- Table -->
+	 	<div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>                    </h1>
+                <p class="lead">Escoja en cuatrimestre y la carrera</p>
+  <select class="selectpicker">
+  <option>Ingenieria Informatica</option>
+  <option>Contabilidad</option>
+  <option>Derecho</option>
+  
+  
+  </div>
+ 
+  
+</select>
+
+<h1>                    </h1>
+
+  <select onChange="window.location.href=this.value">
+    <option value="CalificacionesApp.html">2016-II</option>
+    <option value="CalificacionesApp.html">2016-I</option>
+	<option value="CalificacionesApp.html">2015-III</option>
+	<option value="CalificacionesApp.html">2015-II</option>
+	<option value="CalificacionesApp.html">2015-I</option>
+</select>
+
+            </div>
+	</div>
+	
+	</div>
+        <!-- /.row -->
+</div>
+<div id="footer" class="footerline">
+ <div>-</div>
+</div>
+    <div id="footer" class="footer">
+	 <div class="container">
+
+        <div class="row footer">
+          <div class="col-sm-3">
+
+            <div class="foot-links">
+              <p><br>San José, Costa Rica<br>
+               Urbanización Tournón</p>
+             </div>
+           </div>
+          <div class="col-sm-3">
+           <div class="foot-links">
+             <p><a href="#" style="color: #701E85"><br>¿Quiénes somos?</a>
+             <a href="#" style="color: #701E85"><br>Contáctenos<br></a>
+            </p>
+            </div>
+       </div><!--/col-sm-3-->
+       <div class="col-sm-3">
+    
+	   <br>
+        <div class="foot-links">
+          <a href="https://www.facebook.com/ulacitcostarica"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+              <a href="https://twitter.com/ulacitcostarica"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+              <a href="http://www.youtube.com/user/Ulacitcr"><i id="social-em" class="fa fa-youtube-square fa-3x social"></i></a>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="foot-header"> <br> </div>
+        <div class="foot-links">
+           <a href="http://www.ulacit.ac.cr/" style="color: #701E85">ULACIT</a><br>
+         Proyecto App<br>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="foot-header">
+        </div>
+      </div>
+      <div class="col-sm-3">
+
+      </div>
+
+    </div>
+    <div class="row">
+      <div id="bottom-footer">
+        <div class="row">
+          <div class="col-md-8">
+
+          </div>
+          <div class="col-md-4 phone">
+            <div class="pull-left">
+
+            </div>
+            <div class="pull-right">
+
+            </div>
+          </div>
+        </div>
+      </div>
+   </div>
+ </div>
+ </div>
+<script>
+  $(function () {
+		Application.init();
+	});
+</script>
+
+</body>
